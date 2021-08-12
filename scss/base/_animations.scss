@@ -46,9 +46,11 @@
 @keyframes headingAppear {
   0% {
     width: 0;
+    opacity: 0;
   }
 
   100% {
     width: 75%;
+    opacity: 1;
   }
 }
