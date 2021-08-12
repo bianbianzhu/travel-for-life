@@ -1,0 +1,54 @@
+@keyframes movingDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(290%);
+  }
+}
+
+@keyframes movingInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes movingInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleDown {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes headingAppear {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 75%;
+  }
+}

@@ -1,0 +1,43 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.social-link-bar {
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    &__item {
+        &:not(:last-of-type) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        color: inherit;
+        text-decoration: none;
+        transition: .5s;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            height: .2rem;
+            width: 0;
+            background-color: currentColor;
+            transition: .5s;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+
+            &::before {
+               width: 60%;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@use '../components/date';
+@use '../components/social-link-bar';
+@use '../components/page-nav';
+
+.bottom-nav {
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    align-items: baseline;
+    padding: 2rem 6.4rem 6.4rem 6.4rem;
+    background: linear-gradient(transparent, rgba(0,0,0,1));
+    animation: movingInFromBottom 1s ease-out;
+}

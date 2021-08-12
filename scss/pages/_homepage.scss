@@ -1,0 +1,16 @@
+@use '../layout/header';
+@use '../layout/parallax_section';
+@use '../layout/detail_section';
+@use '../abstracts' as *;
+
+.main-wrapper {
+    // max-width: 120rem;
+    width: (1200/1536) * 100vw;
+    min-height: 50rem;
+    aspect-ratio: 1.815;
+    position: relative;
+    overflow: scroll ;
+    overflow-x: hidden;
+    border-radius: 1.5rem;
+    box-shadow: $shadow-dark;
+}

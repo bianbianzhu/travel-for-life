@@ -1,0 +1,20 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.date-box {
+    font-size: 2rem;
+    display: flex;
+    align-items: baseline;
+
+    &__month {
+        font-size: 4.2rem;
+        font-weight: 600;
+        margin-right: 1rem;
+    }
+
+    &__day {
+        color: rgba($color:lightgrey, $alpha: .5);
+        font-weight: 600;
+        letter-spacing: .2rem;
+    }
+}
