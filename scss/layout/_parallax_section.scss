@@ -28,6 +28,7 @@
          display: flex;
          flex-direction: column;
          width: 75%;
+         overflow: hidden;
 
          &--single {
             display: block;
