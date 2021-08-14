@@ -1,62 +1,63 @@
 @use '../components/bottom-nav';
+@use '../components/popup';
 
 .parallax-sec {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &__bg-main {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: scaleDown 2s ease-in-out;
+    backface-visibility: hidden;
+  }
+
+  &__heading {
+    position: absolute;
+    font-size: 6.3vw;
+    font-weight: 600;
+    animation: headingAppear 3s;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    width: 75%;
     overflow: hidden;
 
-    &__bg-main {
-       position: absolute;
-       top: 0;
-       left: 0;
-       height: 100%;
-       width: 100%;
-       object-fit: cover;
-       animation: scaleDown 2s ease-in-out;
-       backface-visibility: hidden;
+    &--single {
+      display: block;
+      width: unset;
+      animation: fadeIn 3s;
     }
+  }
 
-    &__heading {
-         position: absolute;
-         font-size: 6.3vw;
-         font-weight: 600;
-         animation: headingAppear 3s;
-         display: flex;
-         flex-direction: column;
-         width: 75%;
-         overflow: hidden;
+  &__heading-part-1 {
+    margin-right: 25%;
+    animation: fadeIn 2s 1s;
+    animation-fill-mode: backwards;
+  }
 
-         &--single {
-            display: block;
-            width: unset;
-            animation: fadeIn 3s;
-         }
-    }
+  &__heading-part-2 {
+    align-self: flex-end;
+    animation: fadeIn 2s 1s;
+    animation-fill-mode: backwards;
+  }
 
-    &__heading-part-1 {
-       margin-right: 25%;
-       animation: fadeIn 2s 1s;
-       animation-fill-mode: backwards;
-    }
-
-    &__heading-part-2 {
-       align-self: flex-end;
-       animation: fadeIn 2s 1s;
-       animation-fill-mode: backwards;
-   }
-
-    &__bg-hero {
-       position: absolute; 
-       top: 0;
-       bottom: 0;
-       left: 0;
-       height: 100%;
-       width: 100%;
-       object-fit: cover;
-       transform-origin: bottom;
-    }
+  &__bg-hero {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform-origin: bottom;
+  }
 }

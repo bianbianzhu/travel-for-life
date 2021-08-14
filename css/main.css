@@ -356,6 +356,12 @@ body {
   animation: movingInFromBottom 1s ease-out;
 }
 
+.popup {
+  position: absolute;
+  z-index: 1;
+  top: 25rem;
+  right: 0;
+}
 .parallax-sec {
   position: relative;
   width: 100%;
@@ -383,6 +389,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 75%;
+  overflow: hidden;
 }
 .parallax-sec__heading--single {
   display: block;

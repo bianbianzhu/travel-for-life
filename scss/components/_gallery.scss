@@ -1,125 +1,122 @@
 @mixin labelStick($label) {
-    &::before {
-        content: $label;
-        position: absolute;
-        font-size: 8rem;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: rgba(#fff, .3);
-        bottom: (8*1.6/2) * -1rem;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+  &::before {
+    content: $label;
+    position: absolute;
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(#fff, 0.3);
+    bottom: (8 * 1.6/2) * -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @mixin labelStickSkewed($label) {
-    &::before {
-        content: $label;
-        position: absolute;
-        font-size: 8rem;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: rgba(#fff, .3);
-        bottom: (8*1.6/2) * -1rem;
-        left: 50%;
-        transform: translateX(-80%);
-    }
+  &::before {
+    content: $label;
+    position: absolute;
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(#fff, 0.3);
+    bottom: (8 * 1.6/2) * -1rem;
+    left: 50%;
+    transform: translateX(-80%);
+  }
 }
 
 .gallery {
+  display: flex;
+  width: 70%;
+  margin-bottom: 10rem;
+  cursor: pointer;
+  height: 36vh;
+
+  &--skewed {
+    justify-content: center;
+    width: 75%;
+  }
+
+  &__item {
+    position: relative;
     display: flex;
-    width: 70%;
-    margin-bottom: 10rem;
-    cursor: pointer;
-    height: 36vh;
+    align-self: stretch;
+    transition: 0.5s;
+
+    &:not(:last-of-type) {
+      margin-right: 7rem;
+    }
+
+    &:nth-child(1) {
+      align-self: center;
+      @include labelStick("e");
+    }
+
+    &:nth-child(2) {
+      align-self: flex-end;
+      @include labelStick("a");
+    }
+
+    &:nth-child(3) {
+      align-self: flex-start;
+      @include labelStick("s");
+    }
+
+    &:nth-child(4) {
+      align-self: center;
+      @include labelStick("t");
+    }
+
+    &:hover {
+      transform: translateY(-2rem);
+    }
 
     &--skewed {
-        justify-content: center;
-        width: 75%;
-   
-    }
+      clip-path: polygon(25% 0%, 100% 0%, 75% 120%, 0% 120%);
 
-    &__item {
-        position: relative;
-        display: flex;
-        align-self: stretch;
-        transition: .5s;
-      
-        &:not(:last-of-type) {
-            margin-right: 7rem;
-        }
+      &:not(:last-of-type) {
+        margin-right: -2rem;
+      }
 
-        &:nth-child(1) {
-            align-self: center;
-            @include labelStick('e');
-        }
+      &:nth-child(1) {
+        align-self: inherit;
+        @include labelStickSkewed("n");
+      }
 
-        &:nth-child(2) {
-            align-self: flex-end;
-            @include labelStick('a');
-        }
-
-        &:nth-child(3) {
-            align-self: flex-start;
-            @include labelStick('s');
-        }
-
-        &:nth-child(4) {
-            align-self: center;
-            @include labelStick('t');
-        }
+      &:nth-child(2) {
+        align-self: inherit;
+        @include labelStickSkewed("o");
+        transform: translateY(-5%);
 
         &:hover {
-            transform: translateY(-2rem);
+          transform: translateY(calc(-5% + 2rem));
         }
+      }
 
+      &:nth-child(3) {
+        align-self: inherit;
+        @include labelStickSkewed("r");
+      }
 
-        &--skewed {
-            clip-path: polygon(25% 0%, 100% 0%, 75% 120%, 0% 120%);
+      &:nth-child(4) {
+        align-self: inherit;
+        @include labelStickSkewed("t");
+        transform: translateY(5%);
 
-            &:not(:last-of-type) {
-                margin-right: -2rem;
-            }
+        &:hover {
+          transform: translateY(calc(5% - 2rem));
+        }
+      }
 
-            &:nth-child(1) {
-                align-self: inherit;
-                @include labelStickSkewed('n');
-            }
-
-            &:nth-child(2) {
-                align-self: inherit;
-                @include labelStickSkewed('o');
-                transform: translateY(-5%);
-
-                &:hover {
-                   transform: translateY(calc(-5% + 2rem));
-                }
-            }
-    
-            &:nth-child(3) {
-                align-self: inherit;
-                @include labelStickSkewed('r');
-            }
-    
-            &:nth-child(4) {
-                align-self: inherit;
-                @include labelStickSkewed('t');
-                transform: translateY(5%);
-
-                &:hover {
-                    transform: translateY(calc(5% - 2rem));
-                 }
-            }
-
-            &:nth-child(5) {
-                align-self: inherit;
-                @include labelStickSkewed('h');
-            }
-
-         }
+      &:nth-child(5) {
+        align-self: inherit;
+        @include labelStickSkewed("h");
+      }
     }
+  }
 
-    &__photo {
-        width: 100%;
-    }
+  &__photo {
+    width: 100%;
+  }
 }
