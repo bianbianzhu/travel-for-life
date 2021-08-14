@@ -2,6 +2,7 @@
 @use '../layout/header';
 @use '../layout/parallax_section';
 @use '../layout/detail_section';
+@use '../components/side-nav';
 @use '../abstracts' as *;
 
 .main-wrapper {
@@ -19,6 +20,24 @@
         width: 100vw;
         height: 100vh;
     }
+}
+
+.side-bar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 25vw;
+    height: 48vh;
+    top: 40%;
+    transform: translateY(-50%);
+    right: calc(336/1536/2 * 100vw + 1rem);
+    z-index: 999;
 
 
+    @include mq(large) {
+        right: 0;
+        overflow: visible;
+    }
 }

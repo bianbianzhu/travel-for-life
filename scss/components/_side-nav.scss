@@ -1,0 +1,120 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+.side-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(7vw);
+  animation: fadeIn 1.5s;
+
+  &__item {
+      position: relative;
+      z-index: 999;
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 0.36rem rgba(#fff, 1) solid;
+      position: relative;
+      transition: 1s;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 180%;
+      width: 180%;
+      border-radius: 50%;
+      border: 0.5rem rgba(#fff, 0.3)  solid;
+      z-index: -5;
+      opacity: 0;
+      transition: .75s;
+      pointer-events: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 300%;
+      width: 300%;
+      border-radius: 50%;
+      border: 0.3rem rgba(#fff, 0.3) solid;
+      z-index: -5;
+      opacity: 0;
+      transition: .75s .25s;
+      pointer-events: none;
+    }
+
+    & > span {
+        position: absolute;
+        left: -4.2rem;
+        display: inline-block;
+        height: .3rem;
+        width: 3.5rem;
+        transform: scaleX(0);
+        background-color: #fff;
+        z-index: 999;
+        transition: 1s .25s;
+        transform-origin: right;
+    }
+
+    &:hover, &--active {
+      transform: scale(1.4);
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+      border: 0.36rem #fff solid;
+      box-shadow: $shadow-dark;
+
+      &::before {
+        opacity: 1;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+
+      & > span {
+          transform: scaleX(1);
+      }
+    }
+  }
+
+  &__img {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__description {
+      font-size: 2.5rem;
+      font-weight: 100;
+      width: 0;
+      text-align: center;
+    //   font-style: italic;
+      white-space: nowrap;
+      position: absolute;
+      background-color: rgba($color: #000000, $alpha: .8);
+      top: 50%;
+      left: 0;
+      transform: translateX(calc(-100% + -5.5rem * 1.4)) translateY(-50%) skew(-25deg) scaleY(0);
+      padding: .7rem 0;
+      transform-origin: left;
+      transition: width .5s 1s, 
+      transform .25s;
+      overflow: hidden;
+  }
+
+  &__link:hover + &__description, &__link--active +  &__description {
+      width: 30rem;
+      transform: translateX(calc(-100% + -5.5rem * 1.4)) translateY(-50%) skew(-25deg) scaleY(1);
+  }
+}
