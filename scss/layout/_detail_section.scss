@@ -1,4 +1,5 @@
 @use '../components/gallery';
+@use '../base' as *;
 .detail-sec {
   width: 100%;
   min-height: 90vh;
@@ -10,14 +11,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 10rem;
+  padding: 10rem 10rem;
+
+  @include mq (large) {
+    padding: 20rem 10rem;
+  }
 
   &__paragraph {
     font-size: 1.8rem;
     width: 60%;
     max-width: 75ch;
-    text-align: center;
+    text-align: justify;
     line-height: 2;
     color: rgba(lightgrey, 0.5);
+
+    &::first-letter {
+      font-size: 8rem;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    @include mq (large) {
+      font-size: 1.6rem;
+    }
   }
 }

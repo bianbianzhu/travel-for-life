@@ -1,3 +1,5 @@
+@use '../base' as *;
+
 .page-nav {
   display: flex;
   position: absolute;
@@ -9,6 +11,13 @@
 
   &--adjusted {
     transform: translate(35%, -50%);
+  }
+
+  @include mq(large) {
+    align-self: unset;
+    transform: unset;
+    right: 6.4rem;
+    bottom:16rem;
   }
 
   &__link {

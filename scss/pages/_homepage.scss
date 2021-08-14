@@ -1,3 +1,4 @@
+@use '../base' as *;
 @use '../layout/header';
 @use '../layout/parallax_section';
 @use '../layout/detail_section';
@@ -13,4 +14,11 @@
     overflow-x: hidden;
     border-radius: 1.5rem;
     box-shadow: $shadow-dark;
+
+    @include mq(large) {
+        width: 100vw;
+        height: 100vh;
+    }
+
+
 }

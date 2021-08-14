@@ -1,3 +1,4 @@
+@use '../base' as *;
 @use '../components/bottom-nav';
 @use '../components/popup';
 
@@ -30,6 +31,10 @@
     flex-direction: column;
     width: 75%;
     overflow: hidden;
+
+    @include mq(large) {
+      font-size: 7.5vw;
+    }
 
     &--single {
       display: block;

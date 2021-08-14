@@ -11,6 +11,16 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+@media only screen and (max-width: 96em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 40%;
+  }
+}
 
 body {
   min-height: 100vh;
@@ -306,6 +316,14 @@ body {
 .page-nav--adjusted {
   transform: translate(35%, -50%);
 }
+@media only screen and (max-width: 96em) {
+  .page-nav {
+    align-self: unset;
+    transform: unset;
+    right: 6.4rem;
+    bottom: 16rem;
+  }
+}
 .page-nav__link {
   display: flex;
   justify-content: center;
@@ -390,6 +408,11 @@ body {
   flex-direction: column;
   width: 75%;
   overflow: hidden;
+}
+@media only screen and (max-width: 96em) {
+  .parallax-sec__heading {
+    font-size: 7.5vw;
+  }
 }
 .parallax-sec__heading--single {
   display: block;
@@ -594,15 +617,30 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 10rem;
+  padding: 10rem 10rem;
+}
+@media only screen and (max-width: 96em) {
+  .detail-sec {
+    padding: 20rem 10rem;
+  }
 }
 .detail-sec__paragraph {
   font-size: 1.8rem;
   width: 60%;
   max-width: 75ch;
-  text-align: center;
+  text-align: justify;
   line-height: 2;
   color: rgba(211, 211, 211, 0.5);
+}
+.detail-sec__paragraph::first-letter {
+  font-size: 8rem;
+  font-weight: 600;
+  line-height: 1;
+}
+@media only screen and (max-width: 96em) {
+  .detail-sec__paragraph {
+    font-size: 1.6rem;
+  }
 }
 
 .main-wrapper {
@@ -614,6 +652,12 @@ body {
   overflow-x: hidden;
   border-radius: 1.5rem;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width: 96em) {
+  .main-wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

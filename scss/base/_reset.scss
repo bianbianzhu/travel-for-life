@@ -1,3 +1,4 @@
+@use '../base/breakpoints' as *;
 *,
 *::before,
 *::after {
@@ -10,5 +11,13 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+
+    @include mq(large) {
+        font-size: 50%;
+    }
+
+    @include mq(medium) {
+        font-size: 40%;
+    }
 }
 
