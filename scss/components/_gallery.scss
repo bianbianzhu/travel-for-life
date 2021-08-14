@@ -1,3 +1,5 @@
+@use '../base' as *;
+
 @mixin labelStick($label) {
   &::before {
     content: $label;
@@ -32,6 +34,10 @@
   margin-bottom: 10rem;
   cursor: pointer;
   height: 36vh;
+
+  @include mq (large) {
+    height: 45vh;
+  }
 
   &--skewed {
     justify-content: center;

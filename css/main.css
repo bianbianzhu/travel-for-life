@@ -447,6 +447,11 @@ body {
   cursor: pointer;
   height: 36vh;
 }
+@media only screen and (max-width: 96em) {
+  .gallery {
+    height: 45vh;
+  }
+}
 .gallery--skewed {
   justify-content: center;
   width: 75%;
