@@ -11,7 +11,7 @@
       position: relative;
       z-index: 999;
     &:not(:last-of-type) {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -25,6 +25,7 @@
       border: 0.36rem rgba(#fff, 1) solid;
       position: relative;
       transition: 1s;
+      box-shadow: $shadow-light;
     }
 
     &::before {
@@ -105,7 +106,8 @@
       background-color: rgba($color: #000000, $alpha: .8);
       top: 50%;
       left: 0;
-      transform: translateX(calc(-100% + -5.5rem * 1.4)) translateY(-50%) skew(-25deg) scaleY(0);
+      transform: translateX(calc(-100% + -5.5rem * 1.4)) translateY(-50%)  scaleY(0);
+      //skew(-25deg)
       padding: .7rem 0;
       transform-origin: left;
       transition: width .5s 1s, 
@@ -115,6 +117,7 @@
 
   &__link:hover + &__description, &__link--active +  &__description {
       width: 30rem;
-      transform: translateX(calc(-100% + -5.5rem * 1.4)) translateY(-50%) skew(-25deg) scaleY(1);
+      transform: translateX(calc(-100% + -5.5rem * 1.4)) translateY(-50%) scaleY(1);
+      //skew(-25deg)
   }
 }

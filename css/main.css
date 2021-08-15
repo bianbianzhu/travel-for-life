@@ -660,7 +660,7 @@ body {
   z-index: 999;
 }
 .side-nav__item:not(:last-of-type) {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .side-nav__link:link, .side-nav__link:visited {
   display: flex;
@@ -670,6 +670,7 @@ body {
   border: 0.36rem white solid;
   position: relative;
   transition: 1s;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
 }
 .side-nav__link::before {
   content: "";
@@ -739,7 +740,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   top: 50%;
   left: 0;
-  transform: translateX(calc(-100% + -5.5rem * 1.4)) translateY(-50%) skew(-25deg) scaleY(0);
+  transform: translateX(calc(-100% + -5.5rem * 1.4)) translateY(-50%) scaleY(0);
   padding: 0.7rem 0;
   transform-origin: left;
   transition: width 0.5s 1s, transform 0.25s;
@@ -747,7 +748,7 @@ body {
 }
 .side-nav__link:hover + .side-nav__description, .side-nav__link--active + .side-nav__description {
   width: 30rem;
-  transform: translateX(calc(-100% + -5.5rem * 1.4)) translateY(-50%) skew(-25deg) scaleY(1);
+  transform: translateX(calc(-100% + -5.5rem * 1.4)) translateY(-50%) scaleY(1);
 }
 
 .main-wrapper {

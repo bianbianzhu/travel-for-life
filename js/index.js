@@ -28,23 +28,23 @@ function reloadPage() {
   window.location.reload();
 }
 
-function checkToggleStatus() {
-  let targetBtn1 = document.getElementById("side-nav__link-1");
-  let targetBtn2 = document.getElementById("side-nav__link-2");
-  let targetBtn3 = document.getElementById("side-nav__link-3");
-  let targetBtn4 = document.getElementById("side-nav__link-4");
+// function checkToggleStatus() {
+//   let targetBtn1 = document.getElementById("side-nav__link-1");
+//   let targetBtn2 = document.getElementById("side-nav__link-2");
+//   let targetBtn3 = document.getElementById("side-nav__link-3");
+//   let targetBtn4 = document.getElementById("side-nav__link-4");
 
-  if (targetBtn1.classList.contains("side-nav__link--active")) {
-    targetBtn1.classList.remove("side-nav__link--active");
-  } else if (targetBtn2.classList.contains("side-nav__link--active")) {
-    targetBtn2.classList.remove("side-nav__link--active");
-  } else if (targetBtn3.classList.contains("side-nav__link--active")) {
-    targetBtn3.classList.remove("side-nav__link--active"); 
-  }
-    else if (targetBtn4.classList.contains("side-nav__link--active")) {
-      targetBtn4.classList.remove("side-nav__link--active");
-}
-}
+//   if (targetBtn1.classList.contains("side-nav__link--active")) {
+//     targetBtn1.classList.remove("side-nav__link--active");
+//   } else if (targetBtn2.classList.contains("side-nav__link--active")) {
+//     targetBtn2.classList.remove("side-nav__link--active");
+//   } else if (targetBtn3.classList.contains("side-nav__link--active")) {
+//     targetBtn3.classList.remove("side-nav__link--active"); 
+//   }
+//     else if (targetBtn4.classList.contains("side-nav__link--active")) {
+//       targetBtn4.classList.remove("side-nav__link--active");
+// }
+// }
 
 
 ///////////////////////////////////////////////////////////////////////////////////
