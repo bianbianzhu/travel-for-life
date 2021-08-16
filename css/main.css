@@ -695,6 +695,7 @@ body {
   flex-direction: column;
   transform: translateX(7vw);
   animation: fadeIn 1.5s;
+  pointer-events: auto;
 }
 .side-nav__item {
   position: relative;
@@ -814,7 +815,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
+  pointer-events: none;
   width: 25vw;
   height: 48vh;
   top: 40%;
