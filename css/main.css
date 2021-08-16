@@ -113,6 +113,22 @@ body {
     opacity: 1;
   }
 }
+@keyframes clouding {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
 .logo {
   position: relative;
   z-index: 2;
@@ -388,6 +404,22 @@ body {
   top: 25rem;
   right: 0;
 }
+.parallax-sec__clouds {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.parallax-sec__cloud {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  animation: clouding calc(6s * var(--i)) linear infinite;
+}
+
 .parallax-sec {
   position: relative;
   width: 100%;

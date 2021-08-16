@@ -1,6 +1,7 @@
 @use '../base' as *;
 @use '../components/bottom-nav';
 @use '../components/popup';
+@use '../components/clouds';
 
 .parallax-sec {
   position: relative;
