@@ -39,7 +39,8 @@
     &--single {
       display: block;
       width: unset;
-      animation: fadeIn 3s;
+      animation: fadeIn 3s 1s;
+      animation-fill-mode: backwards;
     }
   }
 
