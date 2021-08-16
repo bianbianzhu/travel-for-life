@@ -37,7 +37,8 @@ body {
 .js-loading *,
 .js-loading *::before,
 .js-loading *::after {
-  animation-play-state: paused;
+  animation-play-state: paused !important;
+  color: red !important;
 }
 
 ::-webkit-scrollbar {
