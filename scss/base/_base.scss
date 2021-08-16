@@ -20,7 +20,7 @@ body {
 .js-loading *::before,
 .js-loading *::after {
   animation-play-state: paused !important;
-  display: none;
+  opacity: 0.4;
 }
 
 ::-webkit-scrollbar {
