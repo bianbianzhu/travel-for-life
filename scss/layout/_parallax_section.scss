@@ -12,6 +12,10 @@
   align-items: center;
   overflow: hidden;
 
+  &--city {
+    height: 145%;
+  }
+
   &__bg-main {
     position: absolute;
     top: 0;
@@ -27,6 +31,7 @@
     position: absolute;
     font-size: 6.3vw;
     font-weight: 600;
+    text-shadow: .1rem .1rem 1rem rgba(0,0,0,.1);
     animation: headingAppear 3s;
     display: flex;
     flex-direction: column;
@@ -42,6 +47,11 @@
       width: unset;
       animation: fadeIn 3s 1s;
       animation-fill-mode: backwards;
+    }
+
+    &--adjustUp {
+      transform: translateY(-100%);
+      font-size: 8.5vw;
     }
   }
 

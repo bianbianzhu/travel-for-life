@@ -429,6 +429,9 @@ body {
   align-items: center;
   overflow: hidden;
 }
+.parallax-sec--city {
+  height: 145%;
+}
 .parallax-sec__bg-main {
   position: absolute;
   top: 0;
@@ -443,6 +446,7 @@ body {
   position: absolute;
   font-size: 6.3vw;
   font-weight: 600;
+  text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
   animation: headingAppear 3s;
   display: flex;
   flex-direction: column;
@@ -459,6 +463,10 @@ body {
   width: unset;
   animation: fadeIn 3s 1s;
   animation-fill-mode: backwards;
+}
+.parallax-sec__heading--adjustUp {
+  transform: translateY(-100%);
+  font-size: 8.5vw;
 }
 .parallax-sec__heading-part-1 {
   margin-right: 25%;
@@ -696,6 +704,7 @@ body {
   transform: translateX(7vw);
   animation: fadeIn 1.5s;
   pointer-events: auto;
+  transition: 0.5s;
 }
 .side-nav__item {
   position: relative;
@@ -819,7 +828,7 @@ body {
   overflow-y: visible;
   pointer-events: none;
   width: 25vw;
-  height: 48vh;
+  height: 55vh;
   top: 40%;
   transform: translateY(-50%);
   right: calc(336/1536/2 * 100vw + 1rem);
