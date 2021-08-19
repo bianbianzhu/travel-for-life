@@ -5,6 +5,8 @@ let heroBgFront = document.querySelector(".parallax-sec__bg-hero--front");
 let heroBgBack = document.querySelector(".parallax-sec__bg-hero--back");
 let header = document.getElementById("header");
 
+// window.addEventListener('load', AOS.refresh);
+
 homePage.addEventListener("scroll", function () {
     let value = homePage.scrollTop;
 

@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TL &mdash; Travel For Life</title>
-    <link rel="stylesheet" href="../css/main.css">
+
     <link rel="shortcut icon" href="../images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/main.css">
     <script src="../js/pageLoading.js" async defer></script>
 </head>
 
@@ -55,8 +57,8 @@
                             src="../images/city-thumb.jpg" alt="" class="side-nav__img"><span></span></a>
                     <h3 class="side-nav__description">Melbourne City.</h3>
                 </li>
-                <li class="side-nav__item"><a href="../html/ocean.html" class="side-nav__link"><img src="../images/great-ocean-road-thumb.jpg"
-                            alt="" class="side-nav__img"><span></span></a>
+                <li class="side-nav__item"><a href="../html/ocean.html" class="side-nav__link"><img
+                            src="../images/great-ocean-road-thumb.jpg" alt="" class="side-nav__img"><span></span></a>
                     <h3 class="side-nav__description">Great Ocean Road.</h3>
                 </li>
                 <li class="side-nav__item"><a href="../html/tour.html" class="side-nav__link"><img
@@ -73,12 +75,13 @@
 
 
         <section class="parallax-sec" id="parallax-section">
-            <img src="../images/ocean-background.png" alt="backgournd image" id="bg-main" class="parallax-sec__bg-main parallax-sec__bg-main--ocean">
+            <img src="../images/ocean-background.png" alt="backgournd image" id="bg-main"
+                class="parallax-sec__bg-main parallax-sec__bg-main--ocean">
 
             <img src="../images/hero-ocean-back.png" alt="background hero back image"
-                class="parallax-sec__bg-hero parallax-sec__bg-hero--back parallax-sec__bg-hero--back--ocean" id="bg-hero-back">
-            <h1 class="parallax-sec__heading parallax-sec__heading--adjustRight"
-                id="bg-heading">
+                class="parallax-sec__bg-hero parallax-sec__bg-hero--back parallax-sec__bg-hero--back--ocean"
+                id="bg-hero-back">
+            <h1 class="parallax-sec__heading parallax-sec__heading--adjustRight" id="bg-heading">
                 Stunning.
             </h1>
             <img src="../images/hero-ocean-front.png" alt="background hero front image"
@@ -135,13 +138,22 @@
                 </figure>
             </div>
             <p class="detail-sec__paragraph">
-                The Great Ocean Road is an Australian National Heritage listed 243-kilometre (151 mi) stretch of road along the south-eastern coast of Australia between the Victorian cities of Torquay and Allansford. Built by returned soldiers between 1919 and 1932 and dedicated to soldiers killed during World War I, the road is the world's largest war memorial. Winding through varying terrain along the coast and providing access to several prominent landmarks, including the Twelve Apostles limestone stack formations, the road is an important tourist attraction in the region. In December 2020, legislation went into effect to legally protect the Great Ocean Road - called the “Great Ocean Road Environs Protection Act 2020”.
+                The Great Ocean Road is an Australian National Heritage listed 243-kilometre (151 mi) stretch of road
+                along the south-eastern coast of Australia between the Victorian cities of Torquay and Allansford. Built
+                by returned soldiers between 1919 and 1932 and dedicated to soldiers killed during World War I, the road
+                is the world's largest war memorial. Winding through varying terrain along the coast and providing
+                access to several prominent landmarks, including the Twelve Apostles limestone stack formations, the
+                road is an important tourist attraction in the region. In December 2020, legislation went into effect to
+                legally protect the Great Ocean Road - called the “Great Ocean Road Environs Protection Act 2020”.
 
             </p>
         </section>
 
     </div>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 <script src="../js/ocean.js" async defer></script>
 

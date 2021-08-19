@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TL &mdash; Travel For Life</title>
-    <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/pageLoading.js" async defer></script>
 </head>
 
@@ -51,22 +52,21 @@
 
         <div class="side-bar">
             <ul class="side-nav">
-                <li class="side-nav__item"><a href="html/city.html" class="side-nav__link" id="side-nav__link-1"
-                        ><img src="images/city-thumb.jpg" alt=""
-                            class="side-nav__img"><span></span></a>
+                <li class="side-nav__item"><a href="html/city.html" class="side-nav__link" id="side-nav__link-1"><img
+                            src="images/city-thumb.jpg" alt="" class="side-nav__img"><span></span></a>
                     <h3 class="side-nav__description">Melbourne City.</h3>
                 </li>
-                <li class="side-nav__item"><a href="html/ocean.html" class="side-nav__link" id="side-nav__link-2"><img src="images/great-ocean-road-thumb.jpg"
-                            alt="" class="side-nav__img"><span></span></a>
+                <li class="side-nav__item"><a href="html/ocean.html" class="side-nav__link" id="side-nav__link-2"><img
+                            src="images/great-ocean-road-thumb.jpg" alt="" class="side-nav__img"><span></span></a>
                     <h3 class="side-nav__description">Great Ocean Road.</h3>
                 </li>
                 <li class="side-nav__item"><a href="html/tour.html" class="side-nav__link" id="side-nav__link-3"><img
                             src="images/tour-thumb.jpg" alt="" class="side-nav__img"><span></span></a>
                     <h3 class="side-nav__description">Mount Dandenong.</h3>
                 </li>
-                <li class="side-nav__item"><a  href="#parallax-section"
-                        class="side-nav__link" id="side-nav__link-4"><img src="images/snow-thumb.jpg"
-                            alt="lake image for button" class="side-nav__img"><span></span></a>
+                <li class="side-nav__item"><a href="#parallax-section" class="side-nav__link" id="side-nav__link-4"><img
+                            src="images/snow-thumb.jpg" alt="lake image for button"
+                            class="side-nav__img"><span></span></a>
                     <h3 class="side-nav__description">Mount Donna Buang.</h3>
                 </li>
             </ul>
@@ -196,7 +196,10 @@
         </section>
 
     </div>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 <script src="js/index.js" async defer></script>
 <!-- github-refresh -->
