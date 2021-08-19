@@ -95,6 +95,22 @@ body {
     transform: scale(1);
   }
 }
+@keyframes scaleDownX {
+  0% {
+    transform: scaleX(1.2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes scaleDownlight {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -460,6 +476,9 @@ body {
   animation: scaleDown 2s ease-in-out;
   backface-visibility: hidden;
 }
+.parallax-sec__bg-main--ocean {
+  animation: scaleDownlight 2.5s linear;
+}
 .parallax-sec__heading {
   position: absolute;
   font-size: 6.3vw;
@@ -484,7 +503,12 @@ body {
 }
 .parallax-sec__heading--adjustUp {
   transform: translateY(-100%);
-  font-size: 8.5vw;
+  font-size: 7.5vw;
+}
+.parallax-sec__heading--adjustRight {
+  text-align: center;
+  right: 5rem;
+  font-size: 7.5vw;
 }
 .parallax-sec__heading-part-1 {
   margin-right: 25%;
@@ -505,6 +529,9 @@ body {
   width: 100%;
   object-fit: cover;
   transform-origin: bottom;
+}
+.parallax-sec__bg-hero--back--ocean {
+  animation: scaleDownlight 2s linear;
 }
 
 .gallery {

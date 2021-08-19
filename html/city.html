@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TL &mdash; Travel For Life</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="../js/pageLoading.js" async defer></script>
+</head>
+
+<body class="city">
+    <div class="main-wrapper" id="home-page">
+        <header class="header" id="header">
+            <div class="logo">
+                <span class="logo__part-1">
+                    Travel
+                </span>
+                <span class="logo__part-2">
+                    <span>For</span>
+                    Life.
+                </span>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" class="search-bar__input" placeholder="Exlpore your life">
+                <button class="search-bar__btn">
+                    <svg class="search-bar__icon">
+                        <use href='../images/symbol-defs.svg#icon-search'>
+                        </use>
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="user-nav">
+                <a href="#" class="btn btn--white">
+                    Login
+                </a>
+
+                <a href="#" class="btn btn--black">
+                    Sign up
+                </a>
+            </nav>
+        </header>
+
+        <div class="side-bar">
+            <ul class="side-nav">
+                <li class="side-nav__item"><a href="../html/city.html" class="side-nav__link"><img
+                            src="../images/city-thumb.jpg" alt="" class="side-nav__img"><span></span></a>
+                    <h3 class="side-nav__description">Melbourne City.</h3>
+                </li>
+                <li class="side-nav__item"><a href="../html/ocean.html" class="side-nav__link"><img src="../images/great-ocean-road-thumb.jpg"
+                            alt="" class="side-nav__img"><span></span></a>
+                    <h3 class="side-nav__description">Great Ocean Road.</h3>
+                </li>
+                <li class="side-nav__item"><a href="../html/tour.html" class="side-nav__link"><img
+                            src="../images/tour-thumb.jpg" alt="" class="side-nav__img"><span></span></a>
+                    <h3 class="side-nav__description">Mount Dandenong.</h3>
+                </li>
+                <li class="side-nav__item"><a href="../index.html" class="side-nav__link "><img
+                            src="../images/snow-thumb.jpg" alt="lake image for button"
+                            class="side-nav__img"><span></span></a>
+                    <h3 class="side-nav__description">Mount Donna Buang.</h3>
+                </li>
+            </ul>
+        </div>
+
+
+        <section class="parallax-sec parallax-sec--city" id="parallax-section">
+            <img src="../images/city-background.png" alt="backgournd image" id="bg-main" class="parallax-sec__bg-main">
+
+            <img src="../images/hero-city-back.png" alt="background hero back image"
+                class="parallax-sec__bg-hero parallax-sec__bg-hero--back" id="bg-hero-back">
+            <img src="../images/hero-city-middle.png" alt="background hero back image"
+                class="parallax-sec__bg-hero parallax-sec__bg-hero--middle" id="bg-hero-back">
+            <h1 class="parallax-sec__heading parallax-sec__heading--single parallax-sec__heading--adjustUp"
+                id="bg-heading">
+                Experience.
+            </h1>
+            <img src="../images/hero-city-front.png" alt="background hero front image"
+                class="parallax-sec__bg-hero parallax-sec__bg-hero--front" id="bg-hero-front">
+            <nav class="bottom-nav" id="bottom-nav">
+                <div class="date-box">
+                    <span class="date-box__month">
+                        08
+                    </span>
+                    <span class="date-box__day">
+                        /11
+                    </span>
+                </div>
+
+                <ul class="social-link-bar">
+                    <li class="social-link-bar__item"><a href="#" class="social-link-bar__link">Instagram.</a></li>
+                    <li class="social-link-bar__item"><a href="#" class="social-link-bar__link">Facebook.</a></li>
+                    <li class="social-link-bar__item"><a href="#" class="social-link-bar__link">Dribbble.</a></li>
+                    <li class="social-link-bar__item"><a href="#" class="social-link-bar__link">Twitter.</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="page-nav page-nav--city">
+                <a href="#detail-section" class="page-nav__link page-nav__link--active">
+                    <svg class="page-nav__icon page-nav__icon--down">
+                        <use href="../images/symbol-defs.svg#icon-arrow-down2"></use>
+                    </svg>
+                    <svg class="page-nav__icon page-nav__icon--hidden">
+                        <use href="../images/symbol-defs.svg#icon-arrow-down2"></use>
+                    </svg>
+                </a>
+                <a href="#" class="page-nav__link page-nav__link--disabled">
+                    <svg class="page-nav__icon page-nav__icon">
+                        <use href="../images/symbol-defs.svg#icon-arrow-up2"></use>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="detail-sec" id="detail-section">
+            <div class="gallery gallery--skewed">
+                <figure class="gallery__item gallery__item--skewed gallery__item--skewed--city" style="--i:'s'">
+                    <img src="../images/gallery-mel-1.jpg" alt="gallery photo 1" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item gallery__item--skewed gallery__item--skewed--city" style="--i:'o'">
+                    <img src="../images/gallery-mel-2.jpg" alt="gallery photo 2" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item gallery__item--skewed gallery__item--skewed--city" style="--i:'u'">
+                    <img src="../images/gallery-mel-3.jpg" alt="gallery photo 3" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item gallery__item--skewed gallery__item--skewed--city" style="--i:'t'">
+                    <img src="../images/gallery-mel-4.jpg" alt="gallery photo 4" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item gallery__item--skewed gallery__item--skewed--city" style="--i:'h'">
+                    <img src="../images/gallery-mel-5.jpg" alt="gallery photo 5" class="gallery__photo">
+                </figure>
+            </div>
+            <p class="detail-sec__paragraph">
+                Melbourne is the coastal capital of the southeastern Australian state of Victoria. At the city's centre
+                is the modern Federation Square development, with plazas, bars, and restaurants by the Yarra River. In
+                the Southbank area, the Melbourne Arts Precinct is the site of Arts Centre Melbourne – a performing arts
+                complex – and the National Gallery of Victoria, with Australian and indigenous art.
+
+            </p>
+        </section>
+
+    </div>
+
+</body>
+<script src="../js/city.js" async defer></script>
+
+</html>

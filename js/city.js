@@ -1,7 +1,7 @@
 let mainBg = document.getElementById("bg-main");
 let headingBg = document.getElementById("bg-heading");
-let heroBg = document.getElementById("bg-hero");
-let heroBgFront = document.querySelector(".parallax-sec__bg-hero--front");
+let heroBg = document.getElementById("bg-hero");//not using
+let heroBgFront = document.querySelector(".parallax-sec__bg-hero--front");//not using
 let heroBgMiddle = document.querySelector(".parallax-sec__bg-hero--middle");
 let heroBgBack = document.querySelector(".parallax-sec__bg-hero--back");
 let header = document.getElementById("header");

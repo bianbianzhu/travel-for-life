@@ -25,6 +25,10 @@
     object-fit: cover;
     animation: scaleDown 2s ease-in-out;
     backface-visibility: hidden;
+
+    &--ocean {
+      animation: scaleDownlight 2.5s linear;
+    }
   }
 
   &__heading {
@@ -51,7 +55,13 @@
 
     &--adjustUp {
       transform: translateY(-100%);
-      font-size: 8.5vw;
+      font-size: 7.5vw;
+    }
+
+    &--adjustRight {
+      text-align: center;
+      right: 5rem;
+      font-size: 7.5vw;
     }
   }
 
@@ -76,5 +86,9 @@
     width: 100%;
     object-fit: cover;
     transform-origin: bottom;
+
+    &--back--ocean {
+      animation: scaleDownlight 2s linear;
+    }
   }
 }
