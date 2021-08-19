@@ -6,40 +6,39 @@
 @use '../abstracts' as *;
 
 .main-wrapper {
-    // max-width: 120rem;
-    width: (1200/1536) * 100vw;
-    min-height: 50rem;
-    aspect-ratio: 1.815;
-    position: relative;
-    overflow: scroll ;
-    overflow-x: hidden;
-    border-radius: 1.5rem;
-    box-shadow: $shadow-dark;
+  // max-width: 120rem;
+  width: (1200/1536) * 100vw;
+  min-height: 50rem;
+  aspect-ratio: 1.815;
+  position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-radius: 1.5rem;
+  box-shadow: $shadow-dark;
 
-    @include mq(large) {
-        width: 100vw;
-        height: 100vh;
-    }
+  @include mq(large) {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 .side-bar {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-    overflow-y: visible;
-    pointer-events: none;
-    width: 25vw;
-    height: 55vh;
-    top: 40%;
-    transform: translateY(-50%);
-    right: calc(336/1536/2 * 100vw + 1rem);
-    z-index: 999;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: visible;
+  pointer-events: none;
+  width: 25vw;
+  height: 55vh;
+  top: 40%;
+  transform: translateY(-50%);
+  right: calc(336 / 1536 / 2 * 100vw + 1rem);
+  z-index: 999;
 
-
-    @include mq(large) {
-        right: 0;
-        overflow: visible;
-    }
+  @include mq(large) {
+    right: 0;
+    overflow: visible;
+  }
 }

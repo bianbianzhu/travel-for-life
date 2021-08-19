@@ -8,20 +8,11 @@ let header = document.getElementById("header");
 let bottomNav = document.getElementById("bottom-nav");
 let homePage = document.getElementById("home-page");
 let sideNav = document.querySelector(".side-nav");
-let pageNav = document.querySelector(".page-nav");
+let pageNavCity = document.querySelector(".page-nav--city");
 let isScrolling;
 
-
-pageNav.style.cssText = `
-align-self: unset;
-transform: unset;
-right: unset;
-left: 50%;
-transform: translateX(-50%);
-bottom: calc(35%);
-mix-blend-mode: difference;
-`;
-
+// pageNav.style.cssText = `
+// `;
 
 homePage.addEventListener("scroll", function () {
   let value = homePage.scrollTop;
@@ -32,13 +23,15 @@ homePage.addEventListener("scroll", function () {
   //   heroBg.style.transform = `scale(${1 - value * .0002})`;
   heroBgBack.style.transform = `translateY(${value * 0.35}px)`;
   heroBgMiddle.style.transform = `translateY(${value * 0.2}px)`;
-//   heroBgFront.style.transform = `scale(${1 - value * .00005})`;
+  //   heroBgFront.style.transform = `scale(${1 - value * .00005})`;
   ////////////////////////////////////////////////////////////////
   headingBg.style.transform = `translateY(calc(-100% + ${value * 0.75}px))`;
   header.style.transform = `translateY(${value * 0.5}px)`;
   //   heroBg.style.transform = `translateY(100px)`;
-  sideNav.style.opacity = "0";
+  pageNavCity.style.transform = `translateY(calc(${value * 0.85}px - 0vh))`;
 
+  ////////////////////////////////////////////
+  sideNav.style.opacity = "0";
   window.clearTimeout(isScrolling);
 
   // Set a timeout to run after scrolling ends

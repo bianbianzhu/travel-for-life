@@ -10,14 +10,35 @@
   animation-fill-mode: backwards;
 
   &--adjusted {
-    transform: translate(35%, -50%);
+    // transform: translate(35%, -50%);
+    transform: translate(68%, -50%);
+  }
+
+  &--city {
+    align-self: unset;
+    transform: unset;
+    right: unset;
+
+    .page-nav__link {
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 0.25rem solid #fff;
+      box-shadow: 0.4rem 0.4rem 3rem rgba(0, 0, 0, 0.5);
+    }
   }
 
   @include mq(large) {
     align-self: unset;
     transform: unset;
     right: 6.4rem;
-    bottom:16rem;
+    bottom: 16rem;
+  }
+
+  &--city {
+    @include mq(large) {
+      align-self: center;
+      transform: translateY(-45vh);
+      right: unset;
+    }
   }
 
   &__link {
@@ -35,6 +56,7 @@
     }
 
     &--disabled {
+      display: none;
       background: rgba(255, 255, 255, 0.25);
 
       .page-nav__icon {

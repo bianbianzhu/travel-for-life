@@ -28,6 +28,20 @@
   }
 }
 
+@mixin labelStickSkewedCustomized() {
+  &::before {
+    content: var(--i);
+    position: absolute;
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(#fff, 0.3);
+    bottom: (8 * 1.6/2) * -1rem;
+    left: 50%;
+    transform: translateX(-80%);
+  }
+}
+
 .gallery {
   display: flex;
   width: 70%;
@@ -118,6 +132,44 @@
       &:nth-child(5) {
         align-self: inherit;
         @include labelStickSkewed("h");
+      }
+
+      &--city {
+
+        &:nth-child(1) {
+          align-self: inherit;
+          @include labelStickSkewedCustomized();
+        }
+  
+        &:nth-child(2) {
+          align-self: inherit;
+          @include labelStickSkewedCustomized();
+          transform: translateY(-5%);
+  
+          &:hover {
+            transform: translateY(calc(-5% + 2rem));
+          }
+        }
+  
+        &:nth-child(3) {
+          align-self: inherit;
+          @include labelStickSkewedCustomized();
+        }
+  
+        &:nth-child(4) {
+          align-self: inherit;
+          @include labelStickSkewedCustomized();
+          transform: translateY(5%);
+  
+          &:hover {
+            transform: translateY(calc(5% - 2rem));
+          }
+        }
+  
+        &:nth-child(5) {
+          align-self: inherit;
+          @include labelStickSkewedCustomized();
+        }
       }
     }
   }
